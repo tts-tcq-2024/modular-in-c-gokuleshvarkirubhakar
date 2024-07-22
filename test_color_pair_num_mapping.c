@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "get_color_pair_num_mapping.h"
+#include "test_color_pair_num_mapping.h"
 
 void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor) {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
