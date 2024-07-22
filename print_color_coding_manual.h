@@ -3,4 +3,4 @@
 
 void PrintColorCodeManual(void);
 
-#endif
+#endif // PRINT_COLOR_CODING_MANUAL_H_
