@@ -1,8 +1,8 @@
 #ifndef GET_COLOR_PAIR_NUM_MAPPING_H_
 #define GET_COLOR_PAIR_NUM_MAPPING_H_
 
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+typedef enum {WHITE, RED, BLACK, YELLOW, VIOLET} MajorColor;
+typedef enum {BLUE, ORANGE, GREEN, BROWN, SLATE} MinorColor;
 
 extern const char* MajorColorNames[];
 extern const char* MinorColorNames[];
