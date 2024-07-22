@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <test_color_pair_num_mapping.h>
-#include <print_color_coding_manual.h>
+#include "test_color_pair_num_mapping.h"
+#include "print_color_coding_manual.h"
 
 int main() {
     testNumberToPair(4, WHITE, BROWN);
