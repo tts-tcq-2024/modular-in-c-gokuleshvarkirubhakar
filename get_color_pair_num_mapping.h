@@ -1,5 +1,5 @@
-#ifndef COLOR_CODE_CONVERTER_H_
-#define COLOR_CODE_CONVERTER_H_
+#ifndef GET_COLOR_PAIR_NUM_MAPPING_H_
+#define GET_COLOR_PAIR_NUM_MAPPING_H_
 
 enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
 enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
@@ -12,13 +12,11 @@ extern int numberOfMajorColors;
 extern int numberOfMinorColors;
 
 typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
+    MajorColor majorColor;
+    MinorColor minorColor;
 } ColorPair;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
 ColorPair GetColorFromPairNumber(int pairNumber);
-int GetPairNumberFromColor(const ColorPair* colorPair);
-void PrintColorCodeManual(void);
 
-#endif // COLOR_CODE_CONVERTER_H_
+#endif // GET_COLOR_PAIR_NUM_MAPPING_H_
