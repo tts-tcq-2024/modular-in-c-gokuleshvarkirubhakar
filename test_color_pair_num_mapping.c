@@ -3,7 +3,7 @@
 #include "get_color_pair_num_mapping.h"
 #include "test_color_pair_num_mapping.h"
 
-void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorColor expectedMinor) {
+void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expectedMinor) {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPairToString(&colorPair, colorPairNames);
@@ -12,7 +12,7 @@ void testNumberToPair(int pairNumber, enum MajorColor expectedMajor, enum MinorC
     assert(colorPair.minorColor == expectedMinor);
 }
 
-void testPairToNumber(enum MajorColor major, enum MinorColor minor, int expectedPairNumber) {
+void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
     ColorPair colorPair;
     colorPair.majorColor = major;
     colorPair.minorColor = minor;
