@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <get_color_pair_num_mapping.h>
+#include "get_color_pair_num_mapping.h"
 
 void PrintColorCodeManual(void) {
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
